@@ -8,49 +8,49 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-black">
+      <nav className="bg-black border-solid border-b border-gray-500/50">
         <div className="max-w-8xl mx-auto py-4 sm:py-2 px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 text-white items-center">
+          <div className="flex items-center justify-between h-10">
+            <div className="flex items-center ">
+              <div className="flex-shrink-0 pr-5 text-white items-center sm:border-r-none md:border-solid md:border-r md:border-gray-500/50">
                 <Image
                   height={50}
                   width={100}
                   className="h-8 w-8"
-                  src="/Logo.svg"
+                  src="/logo.svg"
                   alt="vitalogo"
                 />
-                VitaReels
+                
               </div>
 
               <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4 text-xs">
+                <div className="ml-5 flex items-baseline space-x-4 text-xs">
                   <a
                     href="#"
                     className=" text-white px-3 py-2 rounded-md text-xs font-medium"
                   >
-                    About
+                    HOME
                   </a>
 
                   <a
                     href="#"
                     className="text-gray-300 hover:text-white px-3 py-2 rounded-lg text-xs font-medium"
                   >
-                    Learn
+                    ABOUT US
                   </a>
 
                   <a
                     href="#"
                     className="text-gray-300 hover:text-white px-3 py-2 rounded-lg text-xs font-medium"
                   >
-                    Job Board
+                    CONTACT
                   </a>
 
                   <a
                     href="#"
                     className="text-gray-300 hover:text-white px-3 py-2 rounded-lg text-xs font-medium"
                   >
-                    Join Community
+                    HIRE A TALENT
                   </a>
                 </div>
               </div>
@@ -131,36 +131,32 @@ function Nav() {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
                   href="#"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  About
+                  HOME
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Learn
+                  ABOUT US
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Job Board
+                  CONTACT
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Join Community
+                  HIRE A TALENT
                 </a>
 
-                <div className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                  <p>hello</p>
-                  {/* <ConnectWallet/> */}
-                </div>
               </div>
             </div>
           )}
