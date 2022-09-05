@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 
-function Action() {
+function Action({title, description}) {
   return (
     <div className='max-w-[235px]'>
       <div >
-        <h3 className='text-white text-2xl font-bold'>Sign Up</h3>
+        <h3 className='text-white text-2xl font-bold'>{title}</h3>
       </div>
       <Image
         height={60}
@@ -15,8 +15,7 @@ function Action() {
         alt="hrline"
       />
       <p className='text-[#404040] line-clamp-3 text-base'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        {description}
       </p>
     </div>
   );

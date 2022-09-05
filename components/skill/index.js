@@ -25,8 +25,8 @@ const skillList = [
 function Skills() {
   return (
     <div className='flex gap-5 overflow-auto'>
-        {skillList.map(skill =>
-          <Skill skill={skill}/>
+        {skillList.map((skill, index) =>
+          <Skill key={index} skill={skill}/>
         )}
     </div>
   )
