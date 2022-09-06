@@ -60,7 +60,7 @@ const Home: NextPage = () => {
       <Actions />
 
       <section className="bg-[#101010] md:border-solid border-y-2 md:border-gray-500/50 ">
-        <div className="grid grid-cols-1 pl-10 md:pl-0 md:grid-cols-2 items-center 2xl:mx-60 2xl:my-16">
+        <div className="grid grid-cols-1 ml-10 md:pl-0 md:grid-cols-2 items-center 2xl:mx-60 2xl:my-16">
           <div className="max-w-[624px]">
             <h4 className="text-[#00A3FF] font-bold text-[64px]">VitaReels</h4>
             <p className="text-[#404040] line-clamp-3 text-base">
@@ -94,7 +94,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="flex flex-col md:border-solid md:border-l-2 md:border-gray-500/50">
-            <div className="flex gap-4 pl-10 text-white md:border-solid md:border-b-2 md:border-gray-500/50 max-w-[624px] pb-10">
+            <div className="flex gap-4 ml-10 text-white md:border-solid md:border-b-2 md:border-gray-500/50 max-w-[624px] pb-10">
               <div>
                 <Image
                   height={60}
@@ -133,21 +133,29 @@ const Home: NextPage = () => {
       </section>
 
       <section>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center h-['3000px']">
-          <div className="text-white">
-            <h3>Checkout Our Top</h3>
-            <h3>Skills ad Hire!</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id
-              est laborum."
-            </p>
+        <div className="grid grid-cols-1 md:grid-cols-5 2xl:ml-60 2xl:my-16 items-center h-['3000px']">
+          <div className="text-white col-span-2">
+            <div>
+              <h3 className="font-extrabold text-[64px]">Checkout Our Top</h3>
+              <h3 className="font-extrabold text-[64px]">
+                Skills and <span className="text-[#00A3FF]">Hire!</span>
+              </h3>
+              <p className="text-xl text-[#404040]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum."
+              </p>
+            </div>
+
+            <div className="mt-10 bg-blue-500 py-5 px-16 rounded-full">
+              <p className="text-base font-extrabold ">Hire a Talent</p>
+            </div>
           </div>
-          <div className=" hidden md:block bg-[url('/Frame.svg')] bg-no-repeat bg-cover">
-            
+          <div className="h-[1000px] col-span-3 hidden md:grid pt-[-10] overflow-hidden">
+            <div className="h-[100%] w-auto hidden md:block bg-[url('/Frame.svg')] bg-no-repeat bg-cover"></div>
           </div>
         </div>
       </section>
