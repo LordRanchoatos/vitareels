@@ -14,8 +14,8 @@ const Home: NextPage = () => {
       </Head>
 
       <NavBar />
-      <div className="bg-black flex justify-center">
-        <section className="h-screen text-white w-full mx-10 md:mx-20 2xl:mx-36 flex flex-col justify-center gap-y-10">
+      <div className="bg-black flex justify-center h-[1052px]">
+        <section className="h-[90%] text-white w-full mx-10 md:mx-20 2xl:mx-36 flex flex-col justify-center gap-y-10">
           <div className="">
             <p className="text-[80px] font-extrabold">Connecting Competent</p>
             <p className="text-[80px] font-extrabold">
@@ -160,26 +160,26 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className="h-[455px] 2xl:mx-60 2xl:my-16 bg-gradient-to-r from-[#AFFCAE] to-[#00A3FF] grid grid-cols-1 md:grid-cols-2 rounded-2xl justify-center">
-        <div className="col-span-1 flex flex-col justify-center items-center">
-          <div className="flex flex-col justify-center">
-            <p className="text-7xl font-bold text-white">Show your </p>
-            <p className="text-7xl font-bold text-white">Skill through</p>
-            <p className="text-7xl font-bold text-white">Reels</p>
-          </div>
-          <div className=" mt-10 bg-blue-500 py-5 px-16 rounded-full">
-            <p className="text-base font-extrabold ">Hire a Talent</p>
+      <section className="h-[455px] 2xl:mx-60 2xl:my-16 bg-gradient-to-r from-[#AFFCAE] to-[#00A3FF] grid grid-cols-1 md:grid-cols-8 rounded-2xl justify-center">
+        <div className="col-span-3 flex flex-col justify-center items-center">
+          <div className="flex flex-col items-center justify-center">
+            <div  className='pl-10'>
+              <p className="text-7xl font-bold text-white">Show your </p>
+              <p className="text-7xl font-bold text-white">Skill through</p>
+              <p className="text-7xl font-bold text-white">Reels</p>
+            </div>
+            <div className=" mt-10 bg-blue-500 py-5 px-16 rounded-full w-[187px]">
+              <p className="text-base font-extrabold ">Hire a Talent</p>
+            </div>
           </div>
         </div>
 
-        <div className="col-span-1">
-          <p>image</p>
-        </div>
+        <div className="hidden md:block h-[100%] w-full col-span-5 md:bg-[url('/reel.svg')] bg-cover"></div>
       </section>
 
-      <footer className="bg-black">
-        <div className="bg-white grid grid-cols-1 md:grid-cols-3 rounded-t-[100px] ">
-          <div className="flex-shrink-0 pr-5 md:px-10 text-white items-center my-10 mx-10 md:mx-20 2xl:mx-36">
+      <footer className="bg-black mb-20">
+        <div className="bg-white grid grid-cols-1 md:grid-cols-3 md:rounded-t-[100px] ">
+          <div className="flex-shrink-0 pr-5 md:px-10 text-white items-center my-10 mx-10 md:mx-20">
             <Image
               height={60}
               width={150}
@@ -187,13 +187,13 @@ const Home: NextPage = () => {
               src="/logo2.svg"
               alt="vitalogo"
             />
-            <p>
+            <p className="text-xl text-[#404040]">
               Connecting competent tech and web3 talents to the best recruiters.
             </p>
           </div>
           <div className="flex flex-col items-center my-10">
-            <div>
-              <p>Quick Links</p>
+            <div className="flex flex-col gap-y-5 text-xl text-[#404040]">
+              <p className="font-bold text-xl text-black">Quick Links</p>
               <p>Discord</p>
               <p>Twitter</p>
               <p>About VitaReel</p>
@@ -203,16 +203,25 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="flex flex-col items-center my-10">
-            <div>
-              <p>Join Our</p>
-              <p>Newsletter</p>
-              <p>
+            <div className="flex flex-col gap-y-5">
+              <p className="text-extrabold text-5xl">Join Our</p>
+              <p className="text-[#00A3FF] text-extrabold text-5xl">
+                Newsletter
+              </p>
+              <p className="text-xl text-[#404040]">
                 Subscribe to receive industry updates about jobs and
                 opportunities.
               </p>
-              <div className='flex flex-col'>
-                <input type="text" placeholder="email" />
-                <input type="submit" />
+              <div className="flex flex-col gap-y-5">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="bg-[#E9E9E9] text-xl px-5 rounded-xl h-16"
+                />
+                <input
+                  type="submit"
+                  className="text-white bg-black text-xl px-5 rounded-xl h-16"
+                />
               </div>
             </div>
           </div>
