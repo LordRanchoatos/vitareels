@@ -160,6 +160,24 @@ const Home: NextPage = () => {
         </div>
       </section>
 
+      <section className="h-[455px] 2xl:mx-60 2xl:my-16 bg-gradient-to-r from-[#AFFCAE] to-[#00A3FF] grid grid-cols-1 md:grid-cols-2 rounded-2xl justify-center">
+        <div className='col-span-1 flex flex-col justify-center items-center'>
+          <div className="flex flex-col justify-center">
+            <p className="text-7xl font-bold text-white">Show your </p>
+            <p className="text-7xl font-bold text-white">Skill through</p>
+            <p className="text-7xl font-bold text-white">Reels</p>
+          </div>
+          <div className=" mt-10 bg-blue-500 py-5 px-16 rounded-full">
+            <p className="text-base font-extrabold ">Hire a Talent</p>
+          </div>
+          
+        </div>
+
+        <div className='col-span-1'>
+          <p>image</p>
+        </div>
+      </section>
+
       <footer className="">
         <p>footer</p>
       </footer>
