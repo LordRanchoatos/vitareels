@@ -161,7 +161,7 @@ const Home: NextPage = () => {
       </section>
 
       <section className="h-[455px] 2xl:mx-60 2xl:my-16 bg-gradient-to-r from-[#AFFCAE] to-[#00A3FF] grid grid-cols-1 md:grid-cols-2 rounded-2xl justify-center">
-        <div className='col-span-1 flex flex-col justify-center items-center'>
+        <div className="col-span-1 flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center">
             <p className="text-7xl font-bold text-white">Show your </p>
             <p className="text-7xl font-bold text-white">Skill through</p>
@@ -170,16 +170,53 @@ const Home: NextPage = () => {
           <div className=" mt-10 bg-blue-500 py-5 px-16 rounded-full">
             <p className="text-base font-extrabold ">Hire a Talent</p>
           </div>
-          
         </div>
 
-        <div className='col-span-1'>
+        <div className="col-span-1">
           <p>image</p>
         </div>
       </section>
 
-      <footer className="">
-        <p>footer</p>
+      <footer className="bg-black">
+        <div className="bg-white grid grid-cols-1 md:grid-cols-3 rounded-t-[100px] ">
+          <div className="flex-shrink-0 pr-5 md:px-10 text-white items-center my-10 mx-10 md:mx-20 2xl:mx-36">
+            <Image
+              height={60}
+              width={150}
+              className="h-8 w-8"
+              src="/logo2.svg"
+              alt="vitalogo"
+            />
+            <p>
+              Connecting competent tech and web3 talents to the best recruiters.
+            </p>
+          </div>
+          <div className="flex flex-col items-center my-10">
+            <div>
+              <p>Quick Links</p>
+              <p>Discord</p>
+              <p>Twitter</p>
+              <p>About VitaReel</p>
+              <p>Careers at VitaReels</p>
+              <p>Blog</p>
+              <p>Brand Assets</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center my-10">
+            <div>
+              <p>Join Our</p>
+              <p>Newsletter</p>
+              <p>
+                Subscribe to receive industry updates about jobs and
+                opportunities.
+              </p>
+              <div className='flex flex-col'>
+                <input type="text" placeholder="email" />
+                <input type="submit" />
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

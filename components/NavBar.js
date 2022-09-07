@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Transition } from '@headlessui/react';
-import { FaTwitter } from "react-icons/fa";
-import { BsDiscord } from "react-icons/bs";
-
+import { FaTwitter } from 'react-icons/fa';
+import { BsDiscord } from 'react-icons/bs';
 
 import dynamic from 'next/dynamic';
 
@@ -23,7 +22,6 @@ function Nav() {
                   src="/logo.svg"
                   alt="vitalogo"
                 />
-                
               </div>
 
               <div className="hidden md:block">
@@ -63,13 +61,13 @@ function Nav() {
                 href="#"
                 className="text-gray-300 hover:text-white px-3 py-2 rounded-lg text-base font-normal flex items-center gap-2"
               >
-                <FaTwitter />{' '} TWITTER
+                <FaTwitter /> TWITTER
               </a>
               <a
                 href="#"
                 className="text-gray-300 hover:text-white px-3 py-2 rounded-lg text-base font-normal flex items-center gap-2"
               >
-                <BsDiscord />{' '} DISCORD
+                <BsDiscord /> DISCORD
               </a>
             </div>
 
@@ -159,7 +157,6 @@ function Nav() {
                 >
                   HIRE A TALENT
                 </a>
-
               </div>
             </div>
           )}
@@ -170,7 +167,5 @@ function Nav() {
 }
 
 export default Nav;
-
-
 
 // div after nav py-4 sm:py-2
