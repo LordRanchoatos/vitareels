@@ -163,7 +163,7 @@ const Home: NextPage = () => {
       <section className="h-[455px] 2xl:mx-60 2xl:my-16 bg-gradient-to-r from-[#AFFCAE] to-[#00A3FF] grid grid-cols-1 md:grid-cols-8 rounded-2xl justify-center">
         <div className="col-span-3 flex flex-col justify-center items-center">
           <div className="flex flex-col items-center justify-center">
-            <div  className='pl-10'>
+            <div className="pl-10">
               <p className="text-7xl font-bold text-white">Show your </p>
               <p className="text-7xl font-bold text-white">Skill through</p>
               <p className="text-7xl font-bold text-white">Reels</p>
@@ -175,6 +175,51 @@ const Home: NextPage = () => {
         </div>
 
         <div className="hidden md:block h-[100%] w-full col-span-5 md:bg-[url('/reel.svg')] bg-cover"></div>
+      </section>
+
+      <section className='flex justify-center items-center'>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10">
+          <div className="text-white w-[506px]">
+            <div className="flex">
+              <div>pI</div>
+              <div>
+                <p>Awoosika Isreal</p>
+                <p>Founder & CEO Web3bridge</p>
+              </div>
+            </div>
+            <div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+                error delectus iure veniam dolorum dignissimos vel. Dolorem iste
+                cupiditate magni inventore vel quam, quidem quasi consequatur
+                sit dolores placeat minus sapiente ipsa ea! Voluptates,
+                praesentium vel? Quia inventore nobis, odio, suscipit molestiae,
+                eius iusto fugiat nostrum sequi necessitatibus aut fuga!
+              </p>
+              <p>stars</p>
+            </div>
+          </div>
+          <div className="text-white w-[506px]">
+            <div className="flex">
+              <div>pI</div>
+              <div>
+                <p>Awoosika Isreal</p>
+                <p>Founder & CEO Web3bridge</p>
+              </div>
+            </div>
+            <div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+                error delectus iure veniam dolorum dignissimos vel. Dolorem iste
+                cupiditate magni inventore vel quam, quidem quasi consequatur
+                sit dolores placeat minus sapiente ipsa ea! Voluptates,
+                praesentium vel? Quia inventore nobis, odio, suscipit molestiae,
+                eius iusto fugiat nostrum sequi necessitatibus aut fuga!
+              </p>
+              <p>stars</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <footer className="bg-black mb-20">
