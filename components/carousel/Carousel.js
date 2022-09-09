@@ -31,6 +31,9 @@ function Carousel() {
   const settings = {
     infinite: true,
     lazyLoad: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     speed: 300,
     slidesToShow: 3,
     centerMode: true,

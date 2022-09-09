@@ -7,13 +7,13 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 .reels {
-  width: 50%;
+  width: 70%;
   margin: 10rem auto;
   height: 570px;
 }
 
 .slide img {
-  width: 20rem;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -29,10 +29,12 @@
 }
 
 .arrow {
-  background-color: #fff;
+  background-color: green;
   position: absolute;
   cursor: pointer;
   z-index: 10;
+  padding: .3rem;
+  border-radius: 50%;
 }
 
 .arrow svg {
@@ -44,11 +46,11 @@
 }
 
 .next {
-  right: 0%;
+  right: 20%;
   top: 50%;
 }
 
 .prev {
-  left: 0%;
+  left: 20%;
   top: 50%;
 }

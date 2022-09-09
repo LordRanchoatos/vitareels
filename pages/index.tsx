@@ -58,9 +58,7 @@ const Home: NextPage = () => {
         <Skills />
       </section>
 
-      <section>
         <Carousel />
-      </section>
 
       <Actions />
 
