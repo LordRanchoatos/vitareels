@@ -17,27 +17,27 @@ const Home: NextPage = () => {
       </Head>
 
       <NavBar />
-      <div className="bg-black flex justify-center h-[1052px]">
-        <section className="h-[90%] text-white w-full mx-10 md:mx-20 2xl:mx-36 flex flex-col justify-center gap-y-10">
-          <div className="">
-            <p className="text-[80px] font-extrabold">Connecting Competent</p>
-            <p className="text-[80px] font-extrabold">
+      <div className="bg-black flex justify-center items-center h-[600px] md:h-[1052px]">
+        <section className="h-[90%] text-white w-full mx-5 md:mx-20 2xl:mx-36 flex flex-col justify-center gap-y-5 md:gap-y-10">
+          <div className="xs:text-center sm:text-center md:text-start">
+            <p className="lg:text-[80px] md:text-6xl text-2xl font-extrabold">Connecting Competent</p>
+            <p className="lg:text-[80px] md:text-6xl text-2xl font-extrabold">
               tech and web3 <span className="text-[#00A3FF]">talents</span>
             </p>
-            <p className="text-6xl font-normal">
+            <p className="md:text-6xl  font-normal sm:text-xl">
               to the best recruiter in reels.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-2">
-            <a href="#" className="bg-blue-500 py-5 px-16 rounded-full">
-              <p className="text-base font-extrabold">Hire a Talent</p>
+            <a href="#" className="bg-blue-500 py-2 md:py-5 px-5 md:px-16 rounded-full text-center w-[50%] md:w-auto">
+              <p className="text-sm md:text-base font-bold md:font-extrabold">Hire a Talent</p>
             </a>
 
             <a
               href="#"
-              className="bg-black py-5 px-10 rounded-full flex gap-x-3 items-center"
+              className="bg-black py-2 md:py-5 px-5 md:px-10 rounded-full flex gap-x-3 text-center w-[70%]"
             >
-              <p className="text-base font-extrabold">Become a Talent</p>{' '}
+              <p className="text-sm md:text-base font-bold md:font-extrabold ">Become a Talent</p>{' '}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
