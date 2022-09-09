@@ -4,6 +4,7 @@ import Image from 'next/image';
 import NavBar from '../components/NavBar';
 import Skills from '../components/skill/index';
 import Actions from '../components/actions/Actions';
+import Carousel from '../components/carousel/Carousel.js';
 
 const Home: NextPage = () => {
   return (
@@ -55,6 +56,10 @@ const Home: NextPage = () => {
       </div>
       <section>
         <Skills />
+      </section>
+
+      <section>
+        <Carousel />
       </section>
 
       <Actions />
@@ -177,7 +182,7 @@ const Home: NextPage = () => {
         <div className="hidden md:block h-[100%] w-full col-span-5 md:bg-[url('/reel.svg')] bg-cover"></div>
       </section>
 
-      <section className='flex justify-center items-center'>
+      <section className="flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10">
           <div className="text-white w-[506px]">
             <div className="flex">
