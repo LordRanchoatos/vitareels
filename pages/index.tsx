@@ -256,7 +256,7 @@ const Home: NextPage = () => {
       </section>
 
       <footer className="bg-black mb-20">
-        <div className="bg-white grid grid-cols-1 md:grid-cols-3 md:rounded-t-[100px] ">
+        <div className="bg-white grid grid-cols-1 md:grid-cols-3 md:rounded-t-[100px]">
           <div className="flex-shrink-0 pr-5 md:px-10 text-white items-center my-10 mx-10 md:mx-20">
             <Image
               height={60}
