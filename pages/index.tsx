@@ -20,23 +20,23 @@ const Home: NextPage = () => {
       </Head>
 
       <NavBar />
-      <div className="bg-black flex justify-center items-center h-[600px] md:h-[1052px]">
-        <section className="h-[90%] text-white w-full mx-5 md:mx-20 2xl:mx-36 flex flex-col justify-center gap-y-5 md:gap-y-10">
+      <div className="bg-black flex h-[600px] md:h-[1052px]">
+        <section className="h-[90%] text-white w-full mx-5 md:mx-20 2xl:mx-36 flex flex-col justify-center items-center md:items-start gap-y-5 md:gap-y-10">
           <div className="xs:text-center sm:text-center md:text-start">
-            <p className="lg:text-[80px] md:text-6xl text-2xl font-extrabold">
+            <p className="lg:text-[80px] md:text-6xl text-3xl leading-10 font-extrabold text-center md:text-start">
               Connecting Competent
             </p>
-            <p className="lg:text-[80px] md:text-6xl text-2xl font-extrabold">
+            <p className="lg:text-[80px] md:text-6xl text-3xl leading-10 font-extrabold text-center md:text-start">
               tech and web3 <span className="text-[#00A3FF]">talents</span>
             </p>
-            <p className="md:text-6xl  font-normal sm:text-xl">
+            <p className="md:text-6xl  font-normal sm:text-xl text-center md:text-start">
               to the best recruiter in reels.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row sm:justify-center sm:items-center gap-2">
+          <div className="flex flex-col md:flex-row sm:justify-center md:justify-start sm:items-center md:items-start gap-2">
             <a
               href="#"
-              className="bg-blue-500 py-2 md:py-5 px-5 md:px-16 rounded-full text-center w-[50%] md:w-auto"
+              className="bg-blue-500 py-2 md:py-5 px-5 md:px-16 rounded-full text-center "
             >
               <p className="text-sm md:text-base font-bold md:font-extrabold">
                 Hire a Talent
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
 
             <a
               href="#"
-              className="bg-black py-2 md:py-5 px-5 md:px-10 rounded-full flex sm:justify-center  sm:items-center gap-x-3 text-center w-[50%] md:w-auto"
+              className="bg-black py-2 md:py-5 px-5 md:px-10 rounded-full flex sm:justify-center  sm:items-center gap-x-3 text-center "
             >
               <p className="text-sm md:text-base font-bold md:font-extrabold ">
                 Become a Talent
