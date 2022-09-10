@@ -45,7 +45,7 @@ const Home: NextPage = () => {
 
             <a
               href="#"
-              className="bg-black py-2 md:py-5 px-5 md:px-10 rounded-full flex sm:justify-center  sm:items-center gap-x-3 text-center "
+              className="bg-black py-2 md:py-5 px-5 md:px-10 rounded-full flex justify-center  items-center gap-x-3 text-center "
             >
               <p className="text-sm md:text-base font-bold md:font-extrabold ">
                 Become a Talent
@@ -257,7 +257,7 @@ const Home: NextPage = () => {
 
       <footer className="bg-black mb-20">
         <div className="bg-white grid grid-cols-1 md:grid-cols-3 md:rounded-t-[100px]">
-          <div className="flex-shrink-0 pr-5 md:px-10 text-white items-center my-10 mx-10 md:mx-20">
+          <div className="flex-shrink-0 md:pr-5 text-center md:text-start md:px-10 text-white items-center my-10 mx-10 md:mx-20">
             <Image
               height={60}
               width={150}
@@ -265,12 +265,12 @@ const Home: NextPage = () => {
               src="/logo2.svg"
               alt="vitalogo"
             />
-            <p className="text-xl text-[#404040]">
+            <p className="text-base md:text-xl text-[#404040]">
               Connecting competent tech and web3 talents to the best recruiters.
             </p>
           </div>
           <div className="flex flex-col items-center my-10">
-            <div className="flex flex-col gap-y-5 text-xl text-[#404040]">
+            <div className="flex flex-col gap-y-5 text-base md:text-xl text-[#404040]">
               <p className="font-bold text-xl text-black">Quick Links</p>
               <p>Discord</p>
               <p>Twitter</p>
@@ -280,25 +280,25 @@ const Home: NextPage = () => {
               <p>Brand Assets</p>
             </div>
           </div>
-          <div className="flex flex-col items-center my-10">
-            <div className="flex flex-col gap-y-5">
-              <p className="text-extrabold text-5xl">Join Our</p>
-              <p className="text-[#00A3FF] text-extrabold text-5xl">
+          <div className="flex flex-col my-10">
+            <div className="flex-shrink-0 md:pr-5">
+              <p className="font-extrabold text-5xl text-center md:text-start">Join Our</p>
+              <p className="text-[#00A3FF] font-extrabold text-5xl text-center md:text-start">
                 Newsletter
               </p>
-              <p className="text-xl text-[#404040]">
+              <p className="text-base md:text-xl text-[#404040] text-center md:text-start">
                 Subscribe to receive industry updates about jobs and
                 opportunities.
               </p>
-              <div className="flex flex-col gap-y-5">
+              <div className="flex flex-col gap-y-5 mx-10 md:mx-0">
                 <input
                   type="text"
                   placeholder="Email"
-                  className="bg-[#E9E9E9] text-xl px-5 rounded-xl h-16"
+                  className="bg-[#E9E9E9] text-base md:text-xl px-3 h-14 md:px-5 rounded-xl md:h-16"
                 />
                 <input
                   type="submit"
-                  className="text-white bg-black text-xl px-5 rounded-xl h-16"
+                  className="text-white bg-black px-3 h-14 text-base md:text-xl md:px-5 rounded-xl md:h-16"
                 />
               </div>
             </div>
