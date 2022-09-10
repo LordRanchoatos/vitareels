@@ -28,14 +28,14 @@ const Home: NextPage = () => {
               to the best recruiter in reels.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row gap-2">
+          <div className="flex flex-col md:flex-row sm:justify-center sm:items-center gap-2">
             <a href="#" className="bg-blue-500 py-2 md:py-5 px-5 md:px-16 rounded-full text-center w-[50%] md:w-auto">
               <p className="text-sm md:text-base font-bold md:font-extrabold">Hire a Talent</p>
             </a>
 
             <a
               href="#"
-              className="bg-black py-2 md:py-5 px-5 md:px-10 rounded-full flex gap-x-3 text-center w-[70%]"
+              className="bg-black py-2 md:py-5 px-5 md:px-10 rounded-full flex sm:justify-center  sm:items-center gap-x-3 text-center w-[50%] md:w-auto"
             >
               <p className="text-sm md:text-base font-bold md:font-extrabold ">Become a Talent</p>{' '}
               <svg
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
+                className="w-3 h-3 md:w-5 md:h-5"
               >
                 <path
                   stroke-linecap="round"
@@ -64,11 +64,11 @@ const Home: NextPage = () => {
 
       <Actions />
 
-      <section className="bg-[#101010] md:border-solid border-y-2 md:border-gray-500/50 ">
+      <section className="bg-[#101010] md:border-solid py-10 border-y-2 md:border-gray-500/50 ">
         <div className="grid grid-cols-1 ml-10 md:pl-0 md:grid-cols-2 items-center 2xl:mx-60 2xl:my-16">
-          <div className="max-w-[624px]">
+          <div className="max-w-[624px] px-5">
             <h4 className="text-[#00A3FF] font-bold text-[64px]">VitaReels</h4>
-            <p className="text-[#404040] line-clamp-3 text-base">
+            <p className="text-[#404040] line-clamp-3 text-sm md:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
               aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -80,14 +80,14 @@ const Home: NextPage = () => {
               href="#"
               className="py-5 px-0 rounded-full flex gap-x-3 items-center"
             >
-              <p className="text-white text-base font-extrabold">Know more</p>{' '}
+              <p className="text-white text-sm md:text-base font-extrabold">Know more</p>{' '}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5 text-white"
+                className="w-3 h-5 md:w-5 md:h-5 text-white"
               >
                 <path
                   stroke-linecap="round"
@@ -110,8 +110,8 @@ const Home: NextPage = () => {
                 />
               </div>
               <div>
-                <h4 className="font-bold text-xl">Industries we serve</h4>
-                <p className="text-base text-[#8F8F8F]">
+                <h4 className="font-bold text-lg md:text-xl">Industries we serve</h4>
+                <p className="md:text-base text-sm text-[#8F8F8F]">
                   Tech, Blockchain, Fintech, E-Commerce Web2 and Web3
                 </p>
               </div>
@@ -127,8 +127,8 @@ const Home: NextPage = () => {
                 />
               </div>
               <div>
-                <h4 className="font-bold text-xl">Who can join?</h4>
-                <p className="text-base text-[#8F8F8F]">
+                <h4 className="font-bold text-lg md:text-xl">Who can join?</h4>
+                <p className="md:text-base text-sm text-[#8F8F8F]">
                   Competent Web3/tech talents/creatives and top recruiters
                 </p>
               </div>
