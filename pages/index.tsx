@@ -68,7 +68,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </div>
-      <section>
+      <section className='overflow-hidden'>
         <Skills />
       </section>
 
@@ -210,18 +210,26 @@ const Home: NextPage = () => {
         <div className="hidden md:block h-[100%] w-full col-span-5 md:bg-[url('/reel.svg')] bg-cover"></div>
       </section>
 
-      <section className="flex justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10">
-          <div className="text-white w-[506px]">
-            <div className="flex">
-              <div className='rounded-full bg-yellow'>pI</div>
-              <div>
-                <p>Awoosika Isreal</p>
-                <p>Founder & CEO Web3bridge</p>
+      <section className="flex justify-center items-center my-20 md:my-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-0 md:gap-x-10 ">
+          <div className="text-white max-w-xs md:max-w-[506px] bg-[#171717] p-5">
+            <div className="flex gap-2">
+              <div className='rounded-full bg-yellow w-[55px] h-[55px]'>
+                <Image  
+                  height={200}
+                  width={200}
+                  className="h-10 w-10"
+                  src="/profile.png"
+                  alt="vitalogo"
+                />
+              </div>
+              <div className='flex flex-col justify-center'>
+                <p className='font-extrabold text-base'>Awoosika Isreal</p>
+                <p className='text-xs'>Founder & CEO Web3bridge</p>
               </div>
             </div>
             <div>
-              <p>
+              <p className='text-sm text-justify text-[#404040]'>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
                 error delectus iure veniam dolorum dignissimos vel. Dolorem iste
                 cupiditate magni inventore vel quam, quidem quasi consequatur
@@ -232,16 +240,24 @@ const Home: NextPage = () => {
               <p>stars</p>
             </div>
           </div>
-          <div className="text-white w-[506px]">
-            <div className="flex">
-              <div>pI</div>
-              <div>
-                <p>Awoosika Isreal</p>
-                <p>Founder & CEO Web3bridge</p>
+          <div className="text-white max-w-xs md:max-w-[506px] bg-[#171717] p-5">
+            <div className="flex gap-2">
+              <div className='rounded-full bg-yellow w-[55px] h-[55px]'>
+                <Image  
+                  height={200}
+                  width={200}
+                  className="h-10 w-10"
+                  src="/profile.png"
+                  alt="vitalogo"
+                />
+              </div>
+              <div className='flex flex-col justify-center'>
+                <p className='font-extrabold text-base'>Awoosika Isreal</p>
+                <p className='text-xs'>Founder & CEO Web3bridge</p>
               </div>
             </div>
             <div>
-              <p>
+              <p className='text-sm text-justify text-[#404040]'>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
                 error delectus iure veniam dolorum dignissimos vel. Dolorem iste
                 cupiditate magni inventore vel quam, quidem quasi consequatur
@@ -252,6 +268,7 @@ const Home: NextPage = () => {
               <p>stars</p>
             </div>
           </div>
+          
         </div>
       </section>
 
