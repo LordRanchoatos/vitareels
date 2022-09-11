@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar';
 import Skills from '../components/skill/index';
 import Actions from '../components/actions/Actions';
 import Carousel from '../components/carousel/Carousel.js';
+import { RiStarFill } from 'react-icons/ri';
 
 const Home: NextPage = () => {
   return (
@@ -68,7 +69,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </div>
-      <section className='overflow-hidden'>
+      <section className="overflow-hidden">
         <Skills />
       </section>
 
@@ -214,8 +215,8 @@ const Home: NextPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-0 md:gap-x-10 ">
           <div className="text-white max-w-xs md:max-w-[506px] bg-[#171717] p-5">
             <div className="flex gap-2">
-              <div className='rounded-full bg-yellow w-[55px] h-[55px]'>
-                <Image  
+              <div className="rounded-full bg-yellow w-[55px] h-[55px]">
+                <Image
                   height={200}
                   width={200}
                   className="h-10 w-10"
@@ -223,13 +224,13 @@ const Home: NextPage = () => {
                   alt="vitalogo"
                 />
               </div>
-              <div className='flex flex-col justify-center'>
-                <p className='font-extrabold text-base'>Awoosika Isreal</p>
-                <p className='text-xs'>Founder & CEO Web3bridge</p>
+              <div className="flex flex-col justify-center">
+                <p className="font-extrabold text-base">Awoosika Isreal</p>
+                <p className="text-xs">Founder & CEO Web3bridge</p>
               </div>
             </div>
-            <div>
-              <p className='text-sm text-justify text-[#404040]'>
+            <div className="flex flex-col gap-y-4">
+              <p className="text-sm text-justify text-[#404040]">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
                 error delectus iure veniam dolorum dignissimos vel. Dolorem iste
                 cupiditate magni inventore vel quam, quidem quasi consequatur
@@ -237,13 +238,19 @@ const Home: NextPage = () => {
                 praesentium vel? Quia inventore nobis, odio, suscipit molestiae,
                 eius iusto fugiat nostrum sequi necessitatibus aut fuga!
               </p>
-              <p>stars</p>
+              <div className="flex gap-2 text-[#00A3FF]">
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+              </div>
             </div>
           </div>
           <div className="text-white max-w-xs md:max-w-[506px] bg-[#171717] p-5">
             <div className="flex gap-2">
-              <div className='rounded-full bg-yellow w-[55px] h-[55px]'>
-                <Image  
+              <div className="rounded-full bg-yellow w-[55px] h-[55px]">
+                <Image
                   height={200}
                   width={200}
                   className="h-10 w-10"
@@ -251,13 +258,13 @@ const Home: NextPage = () => {
                   alt="vitalogo"
                 />
               </div>
-              <div className='flex flex-col justify-center'>
-                <p className='font-extrabold text-base'>Awoosika Isreal</p>
-                <p className='text-xs'>Founder & CEO Web3bridge</p>
+              <div className="flex flex-col justify-center">
+                <p className="font-extrabold text-base">Awoosika Isreal</p>
+                <p className="text-xs">Founder & CEO Web3bridge</p>
               </div>
             </div>
-            <div>
-              <p className='text-sm text-justify text-[#404040]'>
+            <div className="flex flex-col gap-y-4">
+              <p className="text-sm text-justify text-[#404040]">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
                 error delectus iure veniam dolorum dignissimos vel. Dolorem iste
                 cupiditate magni inventore vel quam, quidem quasi consequatur
@@ -265,10 +272,15 @@ const Home: NextPage = () => {
                 praesentium vel? Quia inventore nobis, odio, suscipit molestiae,
                 eius iusto fugiat nostrum sequi necessitatibus aut fuga!
               </p>
-              <p>stars</p>
+              <div className="flex gap-2 text-[#00A3FF]">
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+              </div>
             </div>
           </div>
-          
         </div>
       </section>
 
@@ -297,9 +309,11 @@ const Home: NextPage = () => {
               <p>Brand Assets</p>
             </div>
           </div>
-          <div className="flex flex-col my-10">
+          <div className="flex flex-col my-10 md:pr-20">
             <div className="flex-shrink-0 md:pr-5">
-              <p className="font-extrabold text-5xl text-center md:text-start">Join Our</p>
+              <p className="font-extrabold text-5xl text-center md:text-start">
+                Join Our
+              </p>
               <p className="text-[#00A3FF] font-extrabold text-5xl text-center md:text-start">
                 Newsletter
               </p>
