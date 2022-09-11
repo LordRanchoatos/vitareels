@@ -3,10 +3,10 @@ import Slider from 'react-slick';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 const images = [
-  'http://placekitten.com/g/400/200',
-  'http://placekitten.com/g/400/200',
-  'http://placekitten.com/g/400/200',
-  'http://placekitten.com/g/400/200',
+  '/caro1.png',
+  '/caro1.png',
+  '/caro1.png',
+  '/caro1.png',
 ];
 
 function Carousel() {
@@ -48,7 +48,7 @@ function Carousel() {
       <Slider {...settings}>
         {images.map((img, idx) => (
           <div className={idx === imageIndex ? 'slide activeSlide' : 'slide'}>
-            <img src={img} alt={img} />
+            <img className='' src={img} alt={img} />
           </div>
         ))}
       </Slider>
