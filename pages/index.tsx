@@ -159,7 +159,7 @@ const Home: NextPage = () => {
       <section>
         <div className="grid grid-cols-1 md:grid-cols-5 2xl:ml-60 2xl:my-16 items-center h-['3000px'] my-10 md:my-0">
           <div className="text-white col-span-2">
-            <div className="text-center md:text-start my-5">
+            <div className="text-center md:text-start my-5 md:ml-10">
               <h3 className="font-bold md:font-extrabold text-4xl md:text-[64px] mb-3 md:mb-7">
                 Checkout Our Top
               </h3>
@@ -188,27 +188,34 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className="h-[455px] 2xl:mx-60 2xl:my-16 bg-gradient-to-r from-[#AFFCAE] to-[#00A3FF] grid grid-cols-1 md:grid-cols-8 md:rounded-2xl justify-center">
-        <div className="col-span-3 flex flex-col justify-center items-center">
-          <div className="flex flex-col justify-center">
-            <div className=" text-center md:text-start">
-              <p className="text-5xl md:text-7xl font-bold text-white">
-                Show your{' '}
-              </p>
-              <p className="text-5xl md:text-7xl font-bold text-white">
-                Skill through
-              </p>
-              <p className="text-5xl md:text-7xl font-bold text-white">Reels</p>
+      {/* <section className="h-56 2xl:mx-60 2xl:my-16 bg-gradient-to-r from-[#AFFCAE] to-[#00A3FF] grid grid-cols-1 md:grid-cols-8 md:rounded-2xl justify-center"> */}
+      <section className="">
+        <div className='2xl:grid 2xl:place-items-center overflow-hidden'>
+          <div className="2xl:h-[600px] 2xl:w-[1180px] bg-gradient-to-r from-[#AFFCAE] to-[#00A3FF] 2xl:bg-[url('/reelsbg.png')] bg-contain bg-no-repeat">
+            <div className=" flex flex-col justify-center items-center 2xl:justify-start 2xl:items-start ">
+              <div className="flex flex-col justify-center items-center 2xl:items-start">
+                <div className=" text-center md:text-start pt-10 2xl:pl-10 2xl:pt-10">
+                  <p className="text-5xl md:text-7xl font-bold text-white text-center 2xl:text-start">
+                    Show your{' '}
+                  </p>
+                  <p className="text-5xl md:text-7xl font-bold text-white text-center 2xl:text-start">
+                    Skill through
+                  </p>
+                  <p className="text-5xl md:text-7xl font-bold text-white text-center 2xl:text-start">
+                    Reels
+                  </p>
+                </div>
+                <div className="mt-10 flex pb-10 2xl:pl-10 md:flex-start text-center md:justify-start justify-center">
+                  <p className="text-base md:text-xl text-white font-bold md:font-extrabold bg-blue-500 py-3 px-8 md:py-5 md:px-16 rounded-full">
+                    Hire a Talent
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="mt-10 flex md:flex-start text-center md:justify-start justify-center">
-              <p className="text-base md:text-xl text-white font-bold md:font-extrabold bg-blue-500 py-3 px-8 md:py-5 md:px-16 rounded-full">
-                Hire a Talent
-              </p>
-            </div>
+
+            {/* <div className="hidden md:block h-[100%] w-full col-span-5 bg-[url('/reel.svg')] bg-cover"></div> */}
           </div>
         </div>
-
-        <div className="hidden md:block h-[100%] w-full col-span-5 md:bg-[url('/reel.svg')] bg-cover"></div>
       </section>
 
       <section className="flex justify-center items-center my-20 md:my-40">
