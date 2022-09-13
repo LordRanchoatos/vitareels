@@ -160,10 +160,10 @@ const Home: NextPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 2xl:ml-60 2xl:my-16 items-center h-['3000px'] my-10 md:my-0">
           <div className="text-white col-span-2">
             <div className="text-center md:text-start my-5 md:ml-10">
-              <h3 className="font-bold md:font-extrabold text-4xl md:text-[64px] mb-3 md:mb-7">
+              <h3 className="font-bold md:font-extrabold text-4xl md:text-[62px] mb-3 md:mb-7">
                 Checkout Our Top
               </h3>
-              <h3 className="font-extrabold text-4xl md:text-[64px] mb-3 md:mb-7">
+              <h3 className="font-extrabold text-4xl md:text-[62px] mb-3 md:mb-7">
                 Skills and <span className="text-[#00A3FF]">Hire!</span>
               </h3>
               <p className="text-base md:text-xl px-5 md:px-0 text-[#404040]">

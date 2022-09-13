@@ -6,6 +6,15 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+@layer base {
+  @font-face {
+    font-family: 'Telegraf';
+    src: url('/fonts/Telegraf-Regular.otf') format('otf');
+    font-weight: 400;
+    font-style: medium;
+  }
+}
+
 .reels {
   width: 70%;
   margin: 10rem auto 0rem;
