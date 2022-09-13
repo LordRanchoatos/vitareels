@@ -4,9 +4,9 @@ import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 const images = [
   '/caro1.png',
-  '/caro2.png',
-  '/caro3.png',
+  '/caroo2.png',
   '/caro1.png',
+  '/caroo2.png',
 ];
 
 function Carousel() {
@@ -34,7 +34,7 @@ function Carousel() {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-    speed: 300,
+    speed: 200,
     slidesToShow: 3,
     centerMode: true,
     centerPadding: 0,

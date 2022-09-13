@@ -8,8 +8,8 @@
 
 .reels {
   width: 70%;
-  margin: 10rem auto;
-  height: 570px;
+  margin: 10rem auto 0rem;
+  height: 400px;
 }
 
 .slide img {
@@ -18,13 +18,13 @@
 }
 
 .slide {
-  transform: scale(0.2);
+  transform: scale(0.8); /* this is what the non active image looks like*/
   transition: transform 300ms;
   opacity: 0.5;
 }
 
 .activeSlide {
-  transform: scale(1.1);
+  transform: scale(1.1); /* what the active image looks like */
   opacity: 1;
 }
 
@@ -33,7 +33,7 @@
   position: absolute;
   cursor: pointer;
   z-index: 10;
-  padding: .3rem;
+  padding: .4rem;
   border-radius: 50%;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .arrow svg:hover {
-  color: #68edff;
+  color: #00ff66;
 }
 
 .next {
