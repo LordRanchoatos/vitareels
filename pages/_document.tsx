@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <body className='ont-telegraf'>
+      <body className='font-telegraf'>
         <Main />
         <NextScript />
       </body>
