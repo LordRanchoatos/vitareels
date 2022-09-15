@@ -17,8 +17,9 @@
 
 .reels {
   width: 70%;
-  margin: 10rem auto 0rem;
+  margin: 10rem auto;
   height: 300px;
+  padding: 0;
 }
 
 .slide img {
@@ -62,4 +63,60 @@
 .prev {
   left: 20%;
   top: 50%;
+}
+
+/* medial queries */
+@media(max-width: 960px) {
+  .reels {
+    margin: 10rem auto 0rem;
+    height: 500px;
+    width: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    /* margin: auto; */
+    height: 400px;
+  }
+  
+  .slide {
+    transform: scale(0.8); /* this is what the non active image looks like*/
+    transition: transform 300ms;
+    opacity: 0.5;
+  }
+  
+  .activeSlide {
+    transform: scale(1.1); /* what the active image looks like */
+    opacity: 1;
+  }
+  
+  .arrow {
+    background-color: green;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    padding: .4rem;
+    border-radius: 50%;
+  }
+  
+  .arrow svg {
+    transition: color 300ms;
+  }
+  
+  .arrow svg:hover {
+    color: #00ff66;
+  }
+  
+  .next {
+    display: none;
+    right: 20%;
+    top: 50%;
+  }
+  
+  .prev {
+    display: none;
+    left: 20%;
+    top: 50%;
+  }
+  
 }

@@ -2,12 +2,7 @@ import { useState } from 'react';
 import Slider from 'react-slick';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
-const images = [
-  '/caro1.png',
-  '/caroo2.png',
-  '/caro1.png',
-  '/caroo2.png',
-];
+const images = ['/caro1.png', '/caroo2.png', '/caro1.png', '/caroo2.png'];
 
 function Carousel() {
   const NextArrow = ({ onClick }) => {
@@ -44,15 +39,39 @@ function Carousel() {
   };
 
   return (
-    <div className="reels">
-      <Slider {...settings}>
-        {images.map((img, idx) => (
-          <div className={idx === imageIndex ? 'slide activeSlide' : 'slide'}>
-            <img className='' src={img} alt={img} />
-          </div>
-        ))}
-      </Slider>
-    </div>
+
+      <div className="reels text-white">
+        <Slider {...settings}>
+          {images.map((img, idx) => (
+            <div className={idx === imageIndex ? 'slide activeSlide' : 'slide'}>
+              <img className="" src={img} alt={img} />
+            </div>
+          ))}
+        </Slider>
+        <a
+          href="#"
+          className="bg-black py-2 md:py-12 px-5 md:px-10 rounded-full flex justify-center  items-center gap-x-3 text-center "
+        >
+          <p className="text-sm md:text-base font-bold md:font-extrabold ">
+            Become a Talent
+          </p>{' '}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="w-3 h-3 md:w-5 md:h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </a>
+      </div>
+    
   );
 }
 
