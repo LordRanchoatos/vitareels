@@ -4,7 +4,7 @@ import { Transition } from '@headlessui/react';
 import { FaTwitter } from 'react-icons/fa';
 import { BsDiscord } from 'react-icons/bs';
 
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
