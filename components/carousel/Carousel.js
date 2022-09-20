@@ -25,11 +25,11 @@ const images = ['/caro1.png', '/caroo2.png', '/caro1.png', '/caroo2.png'];
 
 //   const settings = {
 //     infinite: true,
-//     lazyLoad: true,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     pauseOnHover: true,
-//     speed: 200,
+    //  lazyLoad: true,
+    //  autoplay: true,
+    //  autoplaySpeed: 2000,
+    //  pauseOnHover: true,
+    //  speed: 200,
 //     slidesToShow: 3,
 //     centerMode: true,
 //     centerPadding: 0,
@@ -213,13 +213,17 @@ const Carousel = () => {
   };
 
   const settings = {
+    lazyLoad: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    speed: 200,
     className: 'center',
     centerMode: true,
     focusOnSelect: true,
     infinite: true,
     centerPadding: '100px',
     slidesToShow: 3,
-    speed: 500,
     nextArrow: <GalleryNextArrow />,
     prevArrow: <GalleryPrevArrow />,
   };

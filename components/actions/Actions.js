@@ -27,8 +27,8 @@ const actionList = [
 function Actions() {
   return (
     <section className="my-10 md:my-44 flex flex-wrap md:flex justify-center items-center md:justify-between mx-10 md:mx-20 2xl:mx-36">
-      {actionList.map((anAction) => (
-        <Action title={anAction.title} description={anAction.description} />
+      {actionList.map((anAction, index) => (
+        <Action key={index} title={anAction.title} description={anAction.description} />
       ))}
     </section>
   );
